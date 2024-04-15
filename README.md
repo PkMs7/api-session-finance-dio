@@ -1,9 +1,3 @@
 # API de Sistema de Planejanento Financeiro
 
-Arquitetura utilizada
-
-- 
-
-Pacotes utilizados
-
-- 
+Aplicação para CI: https://circleci.com/
