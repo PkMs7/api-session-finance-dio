@@ -1,5 +1,7 @@
 # API de Sistema de Planejanento Financeiro
 
+API construída para fins de estudos de uma entrega completa, com testes, formatação de código e pipeline de Continuous Integration.
+
 - Aplicação para CI: https://circleci.com/
 
 - Comandos para teste:
