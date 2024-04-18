@@ -4,6 +4,18 @@ API construída para fins de estudos de uma entrega completa, com testes, format
 
 - Aplicação para CI: https://circleci.com/
 
+- Biblioteca para métricas: https://pkg.go.dev/github.com/prometheus/client_golang/prometheus
+
+## Passos para startar a aplicação
+
+- Pré-requisito: Possuir docker na máquina
+
+- Comandos para subir a aplicação:
+
+    - Clonar para repositório local: ```git clone https://github.com/PkMs7/api-session-finance-dio```
+    - Buildar a imagem: ```docker build -t finance .```
+    - Subir o contâiner: ```docker-compose up```
+
 - Comandos para teste:
     - Testes na pasta do arquivo
         ```go test -v```
@@ -12,4 +24,6 @@ API construída para fins de estudos de uma entrega completa, com testes, format
         Comando na pasta raiz
         ```go test ./...```
 
-- Biblioteca para métricas: https://pkg.go.dev/github.com/prometheus/client_golang/prometheus
+- Comando para formatação do código:
+    Comando na pasta raiz
+        ```go fmt ./...```
