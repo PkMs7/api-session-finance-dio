@@ -4,8 +4,9 @@ jobs:
     docker:
       - image: cimg/go:1.21.5
     
-    working_directory: github.com/PkMs7/api-session-finance-dio
+    working_directory: go/scr/github.com/PkMs7/api-session-finance-dio
     steps:
+      - checkout
 
       - run: go version
       - run: go get -v -t -d ./...
