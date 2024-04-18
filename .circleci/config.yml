@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/golang:1.21
+      - image: circleci/golang:1.09
     
     working_directory: /go/src/github.com/PkMs7/api-session-finance-dio
     steps:
