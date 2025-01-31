@@ -14,6 +14,9 @@ jobs:
       - run: go get -v -t -d ./...
       - run: go test -v ./...
       - jira/notify:
+          environment: staging
+          environment_type: staging
+          job_type: deployment
           pipeline_id: << pipeline.id >>
           pipeline_number: << pipeline.number >>
 workflows:
