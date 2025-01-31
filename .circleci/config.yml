@@ -1,4 +1,6 @@
 version: 2
+orbs:
+  jira: circleci/jira@2.0
 jobs:
   build:
     docker:
@@ -11,3 +13,11 @@ jobs:
       - run: go version
       - run: go get -v -t -d ./...
       - run: go test -v ./...
+      - jira/notify:
+          pipeline_id: << pipeline.id >>
+          pipeline_number: << pipeline.number >>
+workflows:
+  build-workflow:
+    jobs:
+      - build:
+          context: JIRA_WEBHOOK_URL
