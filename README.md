@@ -28,4 +28,4 @@ API construída para fins de estudos de uma entrega completa, com testes, format
     Comando na pasta raiz
         ```go fmt ./...```
 
-<!-- Teste de Integração Jira com Pipeline CI/CD -->
+<!-- Teste de Menção em Múltiplas tasks no Jira -->
